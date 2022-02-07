@@ -11,6 +11,7 @@ git commit -m "First Commit"
 
 <!-- Git Information -->
 git log 
+git log --oneline
 git status
 
 <!-- Restoring Files -->    FileState Not work
@@ -42,4 +43,20 @@ git mv OLDNAME NEWNAME
 
 <!-- Differences compare 2 file -->
 git diff
+git diff and with id git log
 
+
+<!-- Changing History -->
+Amending
+git commit -amend
+# git commit -am "New commit message"
+# git commit -amend --no-edit
+
+git reset ef625bc
+git reset --hard ef625bc
+
+<!-- Rebasing -->
+git rebase <branch></commit>
+# git rebase --interactive <branch></commit>
+# git rebase -i HEAD~#
+# git rebase -i --root
