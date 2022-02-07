@@ -19,5 +19,22 @@ git restore --staged README.md
 # git restore .
 # git checkout .
 
+<!-- .gitignore  all file in this line is not store to git -->
+add file .gitignore
+
+and pass in file =>
+.DS_Store
+.vscode/
+authentication.js
+node_modules
+notes/
+**/*-todo.md
+
+<!-- Global Ignore File -->
+git config --global core.excludesfile [file]
+
+<!-- Clearing the cache -->
+git rm -r --cached
+
 
 
